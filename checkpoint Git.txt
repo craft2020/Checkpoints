@@ -1,0 +1,230 @@
+
+AYEBIMED@DAFC-AYIM MINGW64 /c/GoMyCode/learn_git
+$ git init
+Initialized empty Git repository in C:/GoMyCode/learn_git/.git/
+
+AYEBIMED@DAFC-AYIM MINGW64 /c/GoMyCode/learn_git (master)
+$ add third.txt
+bash: add: command not found
+
+AYEBIMED@DAFC-AYIM MINGW64 /c/GoMyCode/learn_git (master)
+$ git add third.txt
+
+AYEBIMED@DAFC-AYIM MINGW64 /c/GoMyCode/learn_git (master)
+$ git commit -m "adding third.txt"
+[master (root-commit) 336fb7c] adding third.txt
+ Committer: IMED ELAYEB <IAYEB@scg.com.tn>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 third.txt
+
+AYEBIMED@DAFC-AYIM MINGW64 /c/GoMyCode/learn_git (master)
+$ git log
+commit 336fb7c4a15524d79ab642af33ca855f76c667c5 (HEAD -> master)
+Author: IMED ELAYEB <IAYEB@scg.com.tn>
+Date:   Sat Oct 15 16:02:41 2022 +0100
+
+    adding third.txt
+
+AYEBIMED@DAFC-AYIM MINGW64 /c/GoMyCode/learn_git (master)
+$ git add fourth.txt
+
+AYEBIMED@DAFC-AYIM MINGW64 /c/GoMyCode/learn_git (master)
+$ git commit -m "adding fourth.txt"
+[master 82955bc] adding fourth.txt
+ Committer: IMED ELAYEB <IAYEB@scg.com.tn>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 fourth.txt
+
+AYEBIMED@DAFC-AYIM MINGW64 /c/GoMyCode/learn_git (master)
+$ git log
+commit 82955bc0d32f14a90e78320ffaed1cf371092f7c (HEAD -> master)
+Author: IMED ELAYEB <IAYEB@scg.com.tn>
+Date:   Sat Oct 15 16:04:34 2022 +0100
+
+    adding fourth.txt
+
+commit 336fb7c4a15524d79ab642af33ca855f76c667c5
+Author: IMED ELAYEB <IAYEB@scg.com.tn>
+Date:   Sat Oct 15 16:02:41 2022 +0100
+
+    adding third.txt
+
+AYEBIMED@DAFC-AYIM MINGW64 /c/GoMyCode/learn_git (master)
+$ git rm --cached third.txt
+rm 'third.txt'
+
+AYEBIMED@DAFC-AYIM MINGW64 /c/GoMyCode/learn_git (master)
+$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+AYEBIMED@DAFC-AYIM MINGW64 /c/GoMyCode/learn_git (master)
+$ git add .
+
+AYEBIMED@DAFC-AYIM MINGW64 /c/GoMyCode/learn_git (master)
+$ git commit -m "removing third.txt"
+On branch master
+nothing to commit, working tree clean
+
+AYEBIMED@DAFC-AYIM MINGW64 /c/GoMyCode/learn_git (master)
+$ git log
+commit 82955bc0d32f14a90e78320ffaed1cf371092f7c (HEAD -> master)
+Author: IMED ELAYEB <IAYEB@scg.com.tn>
+Date:   Sat Oct 15 16:04:34 2022 +0100
+
+    adding fourth.txt
+
+commit 336fb7c4a15524d79ab642af33ca855f76c667c5
+Author: IMED ELAYEB <IAYEB@scg.com.tn>
+Date:   Sat Oct 15 16:02:41 2022 +0100
+
+    adding third.txt
+
+AYEBIMED@DAFC-AYIM MINGW64 /c/GoMyCode/learn_git (master)
+$ git rm third.txt
+rm 'third.txt'
+
+AYEBIMED@DAFC-AYIM MINGW64 /c/GoMyCode/learn_git (master)
+$ git add .
+
+AYEBIMED@DAFC-AYIM MINGW64 /c/GoMyCode/learn_git (master)
+$ git commit -m "removing third.txt"
+[master 084709c] removing third.txt
+ Committer: IMED ELAYEB <IAYEB@scg.com.tn>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 third.txt
+
+AYEBIMED@DAFC-AYIM MINGW64 /c/GoMyCode/learn_git (master)
+$ git log
+commit 084709c041984c26fcd853eda6c34190282cc37d (HEAD -> master)
+Author: IMED ELAYEB <IAYEB@scg.com.tn>
+Date:   Sat Oct 15 16:10:32 2022 +0100
+
+    removing third.txt
+
+commit 82955bc0d32f14a90e78320ffaed1cf371092f7c
+Author: IMED ELAYEB <IAYEB@scg.com.tn>
+Date:   Sat Oct 15 16:04:34 2022 +0100
+
+    adding fourth.txt
+
+commit 336fb7c4a15524d79ab642af33ca855f76c667c5
+Author: IMED ELAYEB <IAYEB@scg.com.tn>
+Date:   Sat Oct 15 16:02:41 2022 +0100
+
+    adding third.txt
+
+AYEBIMED@DAFC-AYIM MINGW64 /c/GoMyCode/learn_git (master)
+$ git config --global core.pager cat
+
+AYEBIMED@DAFC-AYIM MINGW64 /c/GoMyCode/learn_git (master)
+$ git config --global
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    --worktree            use per-worktree config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-pattern]
+    --get-all             get all values: key [value-pattern]
+    --get-regexp          get values for regexp: name-regex [value-pattern]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value-pattern]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-pattern]
+    --unset-all           remove all matches: name [value-pattern]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    --fixed-value         use string equality when comparing values to 'value-pattern'
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    -t, --type <type>     value is given this type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --bool-or-str         value is --bool or string
+    --path                value is a path (file or directory name)
+    --expiry-date         value is an expiry date
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+    --show-scope          show scope of config (worktree, local, global, system, command)
+    --default <value>     with --get, use default value when missing entry
+
+
+AYEBIMED@DAFC-AYIM MINGW64 /c/GoMyCode/learn_git (master)
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Users/AYEBIMED/AppData/Local/Programs/Git/mingw64/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager-core
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+core.pager=cat
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+
+AYEBIMED@DAFC-AYIM MINGW64 /c/GoMyCode/learn_git (master)
+$
